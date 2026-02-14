@@ -156,10 +156,11 @@
     if (users.length === 0) {
       users = [
         { username: 'admin', password: 'admin123' },
-        { username: 'thanh', password: '123' },
-        { username: 'hien', password: '456' },
-        { username: 'phuc', password: '789' },
-        { username: 'lan', password: '101' }
+        { username: 'Tường Vy', password: 'maycongabietgi' },
+        { username: 'Thảo Quyên', password: 'nammoivuive' },
+        { username: 'Phương Vy', password: 'vuivenammoi' },
+        { username: 'Ngọc Diệu', password: 'giamsucmanhcontuongnaylaidi' },
+        { username: 'Thanh Thư', password: 'nghebaitrinhchua' }
       ];
       setUsers(users);
     }
@@ -256,7 +257,7 @@
 
   function xemLichSuAdmin() {
     const pass = document.getElementById('adminPass').value;
-    if (pass !== 'admin2026') { alert('❌ Sai mật khẩu admin!'); return; }
+    if (pass !== 'admintzu2026') { alert('❌ Sai mật khẩu admin!'); return; }
     document.getElementById('adminUserPanel').classList.add('hidden');
     const lichSu = getLichSu();
     const tbody = document.getElementById('adminTableBody');
